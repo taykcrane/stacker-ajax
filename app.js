@@ -62,9 +62,9 @@ var showAnswerer = function (answerer) {
 	var score = result.find(".score");
 	score.text(answerer.score);
 
-	var link = result.find(".link");
+	var link = result.find(".link a");
 	link.attr("href", answerer.user.link);
-	link.find("a").text(answerer.user.link);
+	link.text(answerer.user.link);
 	
 	return result;
 }
